@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    ul {
+        margin-bottom: 0;
+    }
+    li {
+        list-style-type: none;
+    }
+    input {
+        &:focus {
+            outline: none;
+        }
+    }
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+* button:focus {
+    outline: none;
+}
+body {
+    background: #e5e5e5;
+    font-family: "Roboto";
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --primary-color: #103742;
+}

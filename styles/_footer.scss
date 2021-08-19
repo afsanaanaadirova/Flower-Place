@@ -1,0 +1,93 @@
+//footer
+footer {
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    .footer-items {
+        display: flex;
+        justify-content: space-between;
+        &--item {
+            ul {
+                li {
+                    padding-bottom: 10px;
+                    a {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #103742;
+                        i {
+                            padding-right: 8px;
+                        }
+                        span {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            .footer-logo {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                img {
+                    width: 120px;
+                    height: 60px;
+                }
+                span {
+                    -webkit-user-modify: read-write-plaintext-only;
+                }
+            }
+            .footer-socials {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                span {
+                    font-family: Exo;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 34px;
+                    padding-bottom: 2px;
+                    color: #103742;
+                    border-bottom: 1px solid #c9c9c9;
+                }
+                ul {
+                    display: flex;
+                    padding-top: 6px;
+                    li {
+                        padding-left: 9px;
+                        a {
+                            svg {
+                                width: 23px;
+                                height: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+ On screens that are 992px wide 
+ */
+@media screen and (max-width: 992px) {
+    .footer-items {
+        display: flex;
+        flex-direction: column;
+        &--item {
+            padding-bottom: 20px;
+            .footer-logo {
+                align-items: center !important;
+            }
+            span {
+                -webkit-user-modify: unset !important;
+                text-align: center !important;
+            }
+            .footer-socials {
+                align-items: center !important;
+            }
+        }
+    }
+}
